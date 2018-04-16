@@ -31,9 +31,7 @@ class MusicMediaViewController: UIViewController {
     }
 
     @objc  func loadSongs(){
-        
         let urlStr = "https://rss.itunes.apple.com/api/v1/us/itunes-music/hot-tracks/all/100/explicit.json"
-
         let completion = {(onlineSongs: [Result]) in
             self.iTunesSongs = onlineSongs
         }
@@ -58,10 +56,8 @@ class MusicMediaViewController: UIViewController {
                 print("Other error")
             }
         }
-        
         MediaAPIClient.manager.getMedia(from: urlStr, completionHandler: completion, errorHandler: errorHanlder)
     }
-
 }
 
 extension MusicMediaViewController: UITableViewDelegate {
