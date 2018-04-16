@@ -8,13 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		93C111D3208546DF0097631E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C111D2208546DF0097631E /* AppDelegate.swift */; };
-		93C111D5208546DF0097631E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C111D4208546DF0097631E /* ViewController.swift */; };
+		93C111D5208546DF0097631E /* MusicMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C111D4208546DF0097631E /* MusicMediaViewController.swift */; };
 		93C111D8208546DF0097631E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C111D6208546DF0097631E /* Main.storyboard */; };
 		93C111DB208546DF0097631E /* appleMediaDisplay.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93C111D9208546DF0097631E /* appleMediaDisplay.xcdatamodeld */; };
 		93C111DD208546E10097631E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93C111DC208546E10097631E /* Assets.xcassets */; };
 		93C111E0208546E10097631E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93C111DE208546E10097631E /* LaunchScreen.storyboard */; };
 		93C111EB208546E10097631E /* appleMediaDisplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C111EA208546E10097631E /* appleMediaDisplayTests.swift */; };
 		93C111F6208546E10097631E /* appleMediaDisplayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C111F5208546E10097631E /* appleMediaDisplayUITests.swift */; };
+		93C11205208548B10097631E /* BookMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C11204208548B10097631E /* BookMediaViewController.swift */; };
+		93C11207208548BC0097631E /* PodcastMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C11206208548BC0097631E /* PodcastMediaViewController.swift */; };
+		93C11209208548D80097631E /* TVShowsMediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C11208208548D80097631E /* TVShowsMediaViewController.swift */; };
+		93C1120B208549000097631E /* MediaDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C1120A208549000097631E /* MediaDetailViewController.swift */; };
+		93C1120D208549120097631E /* ImageAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C1120C208549120097631E /* ImageAPIClient.swift */; };
+		93C1120F208549220097631E /* MediaAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C1120E208549220097631E /* MediaAPIClient.swift */; };
+		93C112112085492E0097631E /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C112102085492E0097631E /* AppError.swift */; };
+		93C11213208549390097631E /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C11212208549390097631E /* NetworkHelper.swift */; };
+		93C11217208549770097631E /* MediaDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C11216208549770097631E /* MediaDetailView.swift */; };
+		93C11219208549850097631E /* MediaDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C11218208549850097631E /* MediaDisplayView.swift */; };
+		93C1121B208549960097631E /* MediaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C1121A208549960097631E /* MediaTableViewCell.swift */; };
+		93C1121D208549A00097631E /* Media.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C1121C208549A00097631E /* Media.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +49,7 @@
 /* Begin PBXFileReference section */
 		93C111CF208546DE0097631E /* appleMediaDisplay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = appleMediaDisplay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C111D2208546DF0097631E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		93C111D4208546DF0097631E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		93C111D4208546DF0097631E /* MusicMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicMediaViewController.swift; sourceTree = "<group>"; };
 		93C111D7208546DF0097631E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93C111DA208546DF0097631E /* appleMediaDisplay.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = appleMediaDisplay.xcdatamodel; sourceTree = "<group>"; };
 		93C111DC208546E10097631E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +61,18 @@
 		93C111F1208546E10097631E /* appleMediaDisplayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = appleMediaDisplayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93C111F5208546E10097631E /* appleMediaDisplayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appleMediaDisplayUITests.swift; sourceTree = "<group>"; };
 		93C111F7208546E10097631E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93C11204208548B10097631E /* BookMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMediaViewController.swift; sourceTree = "<group>"; };
+		93C11206208548BC0097631E /* PodcastMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastMediaViewController.swift; sourceTree = "<group>"; };
+		93C11208208548D80097631E /* TVShowsMediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowsMediaViewController.swift; sourceTree = "<group>"; };
+		93C1120A208549000097631E /* MediaDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDetailViewController.swift; sourceTree = "<group>"; };
+		93C1120C208549120097631E /* ImageAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAPIClient.swift; sourceTree = "<group>"; };
+		93C1120E208549220097631E /* MediaAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaAPIClient.swift; sourceTree = "<group>"; };
+		93C112102085492E0097631E /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		93C11212208549390097631E /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		93C11216208549770097631E /* MediaDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDetailView.swift; sourceTree = "<group>"; };
+		93C11218208549850097631E /* MediaDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDisplayView.swift; sourceTree = "<group>"; };
+		93C1121A208549960097631E /* MediaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaTableViewCell.swift; sourceTree = "<group>"; };
+		93C1121C208549A00097631E /* Media.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Media.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,10 +124,12 @@
 			isa = PBXGroup;
 			children = (
 				93C111D2208546DF0097631E /* AppDelegate.swift */,
-				93C111D4208546DF0097631E /* ViewController.swift */,
-				93C111D6208546DF0097631E /* Main.storyboard */,
-				93C111DC208546E10097631E /* Assets.xcassets */,
-				93C111DE208546E10097631E /* LaunchScreen.storyboard */,
+				93C1121E208549CA0097631E /* View Controllers */,
+				93C11222208549F40097631E /* Network Handlers */,
+				93C1121F208549D70097631E /* Views */,
+				93C11220208549E20097631E /* Cells */,
+				93C11221208549E90097631E /* Models */,
+				93C112032085488C0097631E /* Supporting Files */,
 				93C111E1208546E10097631E /* Info.plist */,
 				93C111D9208546DF0097631E /* appleMediaDisplay.xcdatamodeld */,
 			);
@@ -126,6 +152,64 @@
 				93C111F7208546E10097631E /* Info.plist */,
 			);
 			path = appleMediaDisplayUITests;
+			sourceTree = "<group>";
+		};
+		93C112032085488C0097631E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93C111D6208546DF0097631E /* Main.storyboard */,
+				93C111DC208546E10097631E /* Assets.xcassets */,
+				93C111DE208546E10097631E /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93C1121E208549CA0097631E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				93C111D4208546DF0097631E /* MusicMediaViewController.swift */,
+				93C11204208548B10097631E /* BookMediaViewController.swift */,
+				93C11206208548BC0097631E /* PodcastMediaViewController.swift */,
+				93C11208208548D80097631E /* TVShowsMediaViewController.swift */,
+				93C1120A208549000097631E /* MediaDetailViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		93C1121F208549D70097631E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				93C11216208549770097631E /* MediaDetailView.swift */,
+				93C11218208549850097631E /* MediaDisplayView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		93C11220208549E20097631E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				93C1121A208549960097631E /* MediaTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		93C11221208549E90097631E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				93C1121C208549A00097631E /* Media.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		93C11222208549F40097631E /* Network Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				93C1120C208549120097631E /* ImageAPIClient.swift */,
+				93C1120E208549220097631E /* MediaAPIClient.swift */,
+				93C112102085492E0097631E /* AppError.swift */,
+				93C11212208549390097631E /* NetworkHelper.swift */,
+			);
+			path = "Network Handlers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,9 +343,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93C11209208548D80097631E /* TVShowsMediaViewController.swift in Sources */,
+				93C11207208548BC0097631E /* PodcastMediaViewController.swift in Sources */,
+				93C112112085492E0097631E /* AppError.swift in Sources */,
 				93C111DB208546DF0097631E /* appleMediaDisplay.xcdatamodeld in Sources */,
-				93C111D5208546DF0097631E /* ViewController.swift in Sources */,
+				93C11213208549390097631E /* NetworkHelper.swift in Sources */,
+				93C1120D208549120097631E /* ImageAPIClient.swift in Sources */,
+				93C11217208549770097631E /* MediaDetailView.swift in Sources */,
+				93C1120F208549220097631E /* MediaAPIClient.swift in Sources */,
+				93C111D5208546DF0097631E /* MusicMediaViewController.swift in Sources */,
+				93C11219208549850097631E /* MediaDisplayView.swift in Sources */,
+				93C11205208548B10097631E /* BookMediaViewController.swift in Sources */,
 				93C111D3208546DF0097631E /* AppDelegate.swift in Sources */,
+				93C1121B208549960097631E /* MediaTableViewCell.swift in Sources */,
+				93C1120B208549000097631E /* MediaDetailViewController.swift in Sources */,
+				93C1121D208549A00097631E /* Media.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
