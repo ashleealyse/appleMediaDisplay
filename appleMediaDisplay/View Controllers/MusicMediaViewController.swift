@@ -27,6 +27,7 @@ class MusicMediaViewController: UIViewController {
         self.mediaDisplayView.mediaTableView.dataSource = self
         self.mediaDisplayView.mediaTypeLabel.text = " Music"
         self.mediaDisplayView.mediaTableView.register(MediaTableViewCell.self, forCellReuseIdentifier: "MediaCell")
+        
     }
 
     @objc  func loadSongs(){
@@ -84,6 +85,13 @@ extension MusicMediaViewController: UITableViewDataSource {
         cell.artistNameLabel.text = aSong.artistName
         cell.mediaTypeLabel.text = aSong.kind
         
+        let imageUrlStr = aSong.artworkUrl100
+        
+        let completion: (UIImage) -> Void = {(onlineImage: UIImage) in
+            cell.mediaImg.image = onlineImage
+        }
+        
+        ImageAPIClient.manager.loadImage(from: imageUrlStr, completionHandler: completion, errorHandler: {print($0)})
         
         return cell
     }
