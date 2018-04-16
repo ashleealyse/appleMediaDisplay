@@ -44,21 +44,21 @@ class MediaDisplayView: UIView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setUpViews() {
+    private func setUpViews() {
         setUpActivityIndicator()
         setUpMediaTypeView()
         setUpMediaTypeLabel()
         setUpTableView()
     }
     
-    func setUpActivityIndicator() {
+    private func setUpActivityIndicator() {
         addSubview(activityIndicator)
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
         activityIndicator.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
         activityIndicator.centerYAnchor.constraint(equalTo: safeAreaLayoutGuide.centerYAnchor).isActive = true
     }
     
-    func setUpMediaTypeView() {
+    private func setUpMediaTypeView() {
         addSubview(mediaTypeDisplayView)
         mediaTypeDisplayView.translatesAutoresizingMaskIntoConstraints = false
         mediaTypeDisplayView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor).isActive = true
@@ -67,7 +67,7 @@ class MediaDisplayView: UIView {
         mediaTypeDisplayView.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor, multiplier: 0.12).isActive = true
     }
     
-    func setUpMediaTypeLabel() {
+    private func setUpMediaTypeLabel() {
         mediaTypeDisplayView.addSubview(mediaTypeLabel)
         mediaTypeLabel.translatesAutoresizingMaskIntoConstraints = false
         mediaTypeLabel.leadingAnchor.constraint(equalTo: mediaTypeDisplayView.leadingAnchor, constant: 5).isActive = true
@@ -75,7 +75,7 @@ class MediaDisplayView: UIView {
     }
     
     
-    func setUpTableView() {
+    private func setUpTableView() {
         addSubview(mediaTableView)
         mediaTableView.translatesAutoresizingMaskIntoConstraints = false
         mediaTableView.topAnchor.constraint(equalTo: mediaTypeDisplayView.bottomAnchor, constant: 2).isActive = true

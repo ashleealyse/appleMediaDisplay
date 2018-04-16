@@ -59,14 +59,14 @@ class MediaTableViewCell: UITableViewCell {
         setUpMediaTypeLabel()
     }
     
-    func setUpActivityIndicator() {
+    private func setUpActivityIndicator() {
         addSubview(activityIndicator)
         activityIndicator.translatesAutoresizingMaskIntoConstraints = false
         activityIndicator.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
         activityIndicator.centerYAnchor.constraint(equalTo: safeAreaLayoutGuide.centerYAnchor).isActive = true
     }
     
-    func setUpMediaImg() {
+    private func setUpMediaImg() {
         addSubview(mediaImg)
         mediaImg.translatesAutoresizingMaskIntoConstraints = false
         mediaImg.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor, constant: 5).isActive = true
@@ -78,7 +78,7 @@ class MediaTableViewCell: UITableViewCell {
         
     }
     
-    func setUpMediaTitle() {
+    private func setUpMediaTitle() {
         addSubview(mediaTitle)
         mediaTitle.translatesAutoresizingMaskIntoConstraints = false
         mediaTitle.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 15).isActive = true
@@ -87,7 +87,7 @@ class MediaTableViewCell: UITableViewCell {
         
     }
     
-    func setUpMediaArtistNameLabel() {
+    private func setUpMediaArtistNameLabel() {
         addSubview(artistNameLabel)
         artistNameLabel.translatesAutoresizingMaskIntoConstraints = false
         artistNameLabel.topAnchor.constraint(equalTo: mediaTitle.bottomAnchor, constant: 5).isActive = true
@@ -96,7 +96,7 @@ class MediaTableViewCell: UITableViewCell {
         
     }
     
-    func setUpMediaTypeLabel() {
+    private func setUpMediaTypeLabel() {
         addSubview(mediaTypeLabel)
         mediaTypeLabel.translatesAutoresizingMaskIntoConstraints = false
         mediaTypeLabel.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -5).isActive = true
