@@ -20,7 +20,7 @@ class MediaDetailView: UIView {
     
     var mediaImageView: UIImageView = {
         let img = UIImageView()
-        img.contentMode = .scaleAspectFit
+        img.contentMode = .scaleAspectFill
         img.clipsToBounds = true
         return img
     }()
