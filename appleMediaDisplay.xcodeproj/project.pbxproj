@@ -169,8 +169,8 @@
 			children = (
 				93C111D4208546DF0097631E /* MusicMediaViewController.swift */,
 				93C11204208548B10097631E /* BookMediaViewController.swift */,
-				93C11206208548BC0097631E /* PodcastMediaViewController.swift */,
 				93C11208208548D80097631E /* TVShowsMediaViewController.swift */,
+				93C11206208548BC0097631E /* PodcastMediaViewController.swift */,
 				93C1120A208549000097631E /* MediaDetailViewController.swift */,
 			);
 			path = "View Controllers";
