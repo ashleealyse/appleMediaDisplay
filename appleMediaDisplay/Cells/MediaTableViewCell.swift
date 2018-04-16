@@ -9,12 +9,16 @@
 import UIKit
 
 class MediaTableViewCell: UITableViewCell {
+    
+    lazy var activityIndicator: UIActivityIndicatorView = {
+        let activityInd = UIActivityIndicatorView()
+        return activityInd
+    }()
 
     lazy var mediaImg: UIImageView = {
         let img = UIImageView()
         img.contentMode = .scaleAspectFit
         img.clipsToBounds = true
-        img.backgroundColor = UIColor.purple.withAlphaComponent(0.5)
         return img
     }()
     
@@ -48,10 +52,18 @@ class MediaTableViewCell: UITableViewCell {
     }
     
     private func commonInit() {
+        setUpActivityIndicator()
         setUpMediaImg()
         setUpMediaTitle()
         setUpMediaArtistNameLabel()
         setUpMediaTypeLabel()
+    }
+    
+    func setUpActivityIndicator() {
+        addSubview(activityIndicator)
+        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        activityIndicator.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
+        activityIndicator.centerYAnchor.constraint(equalTo: safeAreaLayoutGuide.centerYAnchor).isActive = true
     }
     
     func setUpMediaImg() {

@@ -28,6 +28,7 @@ class PodcastMediaViewController: UIViewController {
         self.mediaDisplayView.mediaTypeLabel.text = " Shows"
         self.mediaDisplayView.mediaTableView.register(MediaTableViewCell.self, forCellReuseIdentifier: "MediaCell")
     }
+
     
     @objc  func loadShows(){
         

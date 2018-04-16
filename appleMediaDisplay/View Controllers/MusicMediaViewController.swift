@@ -66,6 +66,18 @@ extension MusicMediaViewController: UITableViewDelegate {
         return 100
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let result = iTunesSongs[indexPath.row]
+        let cell = tableView.cellForRow(at: indexPath) as! MediaTableViewCell
+        let cellImage = cell.mediaImg.image
+        let detailedViewController = MediaDetailViewController(result: result, image: cellImage!)
+        detailedViewController.modalPresentationStyle = .overCurrentContext
+        detailedViewController.modalTransitionStyle = .crossDissolve
+        present(detailedViewController, animated: true, completion: nil)
+        
+    }
+    
 }
 
 extension MusicMediaViewController: UITableViewDataSource {

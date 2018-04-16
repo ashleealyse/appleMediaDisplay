@@ -10,6 +10,12 @@ import UIKit
 
 class MediaDisplayView: UIView {
 
+    lazy var activityIndicator: UIActivityIndicatorView = {
+        let activityInd = UIActivityIndicatorView()
+        activityInd.activityIndicatorViewStyle = .gray
+        return activityInd
+    }()
+    
     lazy var mediaTypeDisplayView: UIView = {
         let mediaTypeView = UIView()
         mediaTypeView.backgroundColor = UIColor.lightGray.withAlphaComponent(0.3)
@@ -39,9 +45,17 @@ class MediaDisplayView: UIView {
     }
     
     func setUpViews() {
+        setUpActivityIndicator()
         setUpMediaTypeView()
         setUpMediaTypeLabel()
         setUpTableView()
+    }
+    
+    func setUpActivityIndicator() {
+        addSubview(activityIndicator)
+        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        activityIndicator.centerXAnchor.constraint(equalTo: safeAreaLayoutGuide.centerXAnchor).isActive = true
+        activityIndicator.centerYAnchor.constraint(equalTo: safeAreaLayoutGuide.centerYAnchor).isActive = true
     }
     
     func setUpMediaTypeView() {
