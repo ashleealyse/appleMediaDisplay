@@ -7,3 +7,18 @@
 //
 
 import Foundation
+
+struct FeedWrapper: Codable {
+    let feed: Feed
+}
+
+struct Feed: Codable {
+    let results: [Result]
+}
+
+struct Result: Codable {
+    let artistName: String
+    let name: String
+    let kind: String
+    let artworkUrl100: String
+}

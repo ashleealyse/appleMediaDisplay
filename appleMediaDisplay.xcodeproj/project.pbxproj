@@ -204,10 +204,10 @@
 		93C11222208549F40097631E /* Network Handlers */ = {
 			isa = PBXGroup;
 			children = (
-				93C1120C208549120097631E /* ImageAPIClient.swift */,
-				93C1120E208549220097631E /* MediaAPIClient.swift */,
 				93C112102085492E0097631E /* AppError.swift */,
 				93C11212208549390097631E /* NetworkHelper.swift */,
+				93C1120E208549220097631E /* MediaAPIClient.swift */,
+				93C1120C208549120097631E /* ImageAPIClient.swift */,
 			);
 			path = "Network Handlers";
 			sourceTree = "<group>";
