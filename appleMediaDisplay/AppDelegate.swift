@@ -17,6 +17,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let tbc = UITabBarController()
+        let mvc = MusicMediaViewController()
+        mvc.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "musicIcon"), tag: 0)
+        let bvc = BookMediaViewController()
+        bvc.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "bookIcon"), tag: 1)
+        let svc = TVShowsMediaViewController()
+        svc.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "tvIcon"), tag: 2)
+        let pvc = PodcastMediaViewController()
+        pvc.tabBarItem = UITabBarItem(title: "", image: #imageLiteral(resourceName: "podcastIcon"), tag: 3)
+        tbc.viewControllers = [mvc, bvc, svc, pvc]
+        window?.rootViewController = tbc
+        window?.makeKeyAndVisible()
         return true
     }
 
