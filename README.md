@@ -5,4 +5,4 @@ This app allows users to view four different types of media from an Apple Media 
 
 |Demo|
 |:-------------:|
-|<http://jmp.sh/v/dgpHhhU7grrGiJQ3T87u>|
+|<https://media.giphy.com/media/9oIrXHk564iZiFBYsG/giphy.gif>|
