@@ -1,7 +1,8 @@
 # appleMediaDisplay
 This app allows users to view four different types of media from an Apple Media API 
 
+## Gifs
 
-|testing|
+|Demo|
 |:-------------:|
-|http://jmp.sh/mxaYNlw|
+|<http://jmp.sh/v/dgpHhhU7grrGiJQ3T87u>|
